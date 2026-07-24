@@ -1,10 +1,17 @@
 use std::fs;
 use std::path::PathBuf;
 
-const APP_NAME: &str = "Fortnite XCloud Launcher";
-const APP_VERSION: &str = "2.0.0";
-const PUBLISHER: &str = "shindozk";
-const SHORTCUT_NAME: &str = "Fortnite XCloud Launcher";
+fn get_app_name() -> String {
+    crate::commands::config::CONFIG.app.name.clone()
+}
+
+fn get_publisher() -> String {
+    crate::commands::config::CONFIG.app.author.clone()
+}
+
+fn get_app_version() -> String {
+    env!("CARGO_PKG_VERSION").to_string()
+}
 
 fn get_install_dir() -> Result<PathBuf, String> {
     let local = dirs::data_local_dir().ok_or("Cannot find local app data".to_string())?;
@@ -27,7 +34,8 @@ fn get_uninstaller_path(install_dir: &PathBuf) -> PathBuf {
 
 fn get_shortcut_path() -> Result<PathBuf, String> {
     let desktop = get_desktop_dir()?;
-    Ok(desktop.join(format!("{}.lnk", SHORTCUT_NAME)))
+    let app_name = get_app_name();
+    Ok(desktop.join(format!("{}.lnk", app_name)))
 }
 
 #[cfg(target_os = "windows")]
@@ -104,6 +112,9 @@ fn create_registry_entries(
 ) -> Result<(), String> {
     let uninstaller = get_uninstaller_path(install_dir);
     let key = get_registry_key()?;
+    let app_name = get_app_name();
+    let app_version = get_app_version();
+    let publisher = get_publisher();
 
     let ps_script = format!(
         r#"
@@ -123,9 +134,9 @@ fn create_registry_entries(
         Set-ItemProperty -Path 'HKCU:\{key}' -Name 'EstimatedSize' -Value 51200 -Type DWord
         "#,
         key = key,
-        app_name = APP_NAME,
-        app_version = APP_VERSION,
-        publisher = PUBLISHER,
+        app_name = app_name,
+        app_version = app_version,
+        publisher = publisher,
         install_dir = install_dir.to_string_lossy().replace('\\', "\\\\"),
         uninstaller = uninstaller.to_string_lossy().replace('\\', "\\\\"),
         exe_path = exe_path.to_string_lossy().replace('\\', "\\\\"),
@@ -145,7 +156,8 @@ fn create_desktop_shortcut(
     exe_path: &PathBuf,
 ) -> Result<(), String> {
     let desktop = get_desktop_dir()?;
-    let shortcut_path = desktop.join(format!("{}.lnk", SHORTCUT_NAME));
+    let app_name = get_app_name();
+    let shortcut_path = desktop.join(format!("{}.lnk", app_name));
 
     if shortcut_path.exists() {
         return Ok(());
@@ -164,7 +176,7 @@ fn create_desktop_shortcut(
         shortcut = shortcut_path.to_string_lossy().replace('\\', "\\\\"),
         exe = exe_path.to_string_lossy().replace('\\', "\\\\"),
         workdir = install_dir.to_string_lossy().replace('\\', "\\\\"),
-        desc = APP_NAME,
+        desc = app_name,
     );
 
     std::process::Command::new("powershell")
@@ -180,6 +192,7 @@ pub fn check_installed() -> Result<bool, String> {
     #[cfg(target_os = "windows")]
     {
         let key = get_registry_key()?;
+        let app_name = get_app_name();
         let output = std::process::Command::new("powershell")
             .args([
                 "-Command",
@@ -192,7 +205,7 @@ pub fn check_installed() -> Result<bool, String> {
             .map_err(|e| e.to_string())?;
 
         let result = String::from_utf8_lossy(&output.stdout).trim().to_string();
-        return Ok(!result.is_empty() && result == APP_NAME);
+        return Ok(!result.is_empty() && result == app_name);
     }
 
     #[cfg(not(target_os = "windows"))]
@@ -223,19 +236,21 @@ pub fn install_app() -> Result<String, String> {
 
     #[cfg(target_os = "macos")]
     {
+        let app_name = get_app_name();
         let applications = PathBuf::from("/Applications");
-        let app_bundle = applications.join(format!("{}.app", APP_NAME));
+        let app_bundle = applications.join(format!("{}.app", app_name));
         fs::create_dir_all(app_bundle.join("Contents/MacOS"))
             .map_err(|e| format!("Failed to create app bundle: {}", e))?;
         fs::copy(
             &target_exe,
-            app_bundle.join("Contents/MacOS").join(APP_NAME),
+            app_bundle.join("Contents/MacOS").join(app_name),
         )
         .map_err(|e| format!("Failed to copy executable: {}", e))?;
     }
 
     #[cfg(target_os = "linux")]
     {
+        let app_name = get_app_name();
         let bin_dir = PathBuf::from("/usr/local/bin");
         fs::create_dir_all(&bin_dir).map_err(|e| format!("Failed to create bin dir: {}", e))?;
         let target = bin_dir.join("fortnite-xcloud-launcher");
@@ -249,7 +264,7 @@ Icon=fortnite-xcloud
 Type=Application
 Categories=Game;
 "#,
-            APP_NAME,
+            app_name,
             target.to_string_lossy(),
         );
         let desktop_file = dirs::home_dir()

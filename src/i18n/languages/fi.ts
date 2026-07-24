@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Asetukset",
     info: "Tiedot",
+    fullscreenHint: "Paina F11 koko näytölle, F11 uudelleen poistuaksesi",
   },
   settings: {
     title: "Asetukset",
@@ -71,6 +72,8 @@ const lang: Translations = {
     languageDesc: "Valitse launcherin näyttökieli",
     launcherDescription: "Mukautettu launcher Fortnite:lle Xbox Cloud Gamingissä",
     githubProject: "GitHub-projekti",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Näytä toimintasi Discordissa",
   },
   info: {
     title: "Tietoja",
@@ -89,6 +92,19 @@ const lang: Translations = {
     links: "Linkit",
     github: "GitHub",
     madeBy: "Tehty huolella Fortnite-yhteisölle",
+  },
+  update: {
+    title: "Päivitys saatavilla",
+    newVersionAvailable: "Uusi versio on saatavilla!",
+    currentVersion: "Nykyinen versio",
+    latestVersion: "Uusin versio",
+    updateNotes: "Uutta",
+    download: "Lataa",
+    later: "Myöhemmin",
+    dismiss: "Hylkää",
+    checking: "Tarkistetaan päivityksiä...",
+    upToDate: "Sinulla on uusin versio!",
+    error: "Päivitysten tarkistus epäonnistui",
   },
 };
 

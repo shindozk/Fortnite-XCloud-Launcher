@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Setări",
     info: "Informații",
+    fullscreenHint: "Apasă F11 pentru ecran complet, F11 din nou pentru ieșire",
   },
   settings: {
     title: "Setări",
@@ -72,6 +73,8 @@ const lang: Translations = {
     languageDesc: "Alege limba de afișare a launcherului",
     launcherDescription: "Un launcher personalizat pentru Fortnite pe Xbox Cloud Gaming",
     githubProject: "Proiect GitHub",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Afișează activitatea pe Discord",
   },
   info: {
     title: "Despre",
@@ -90,6 +93,19 @@ const lang: Translations = {
     links: "Legături",
     github: "GitHub",
     madeBy: "Creat cu grijă pentru comunitatea Fortnite",
+  },
+  update: {
+    title: "Actualizare Disponibilă",
+    newVersionAvailable: "Este disponibilă o nouă versiune!",
+    currentVersion: "Versiunea curentă",
+    latestVersion: "Cea mai recentă versiune",
+    updateNotes: "Noutăți",
+    download: "Descarcă",
+    later: "Mai târziu",
+    dismiss: "Respinge",
+    checking: "Se caută actualizări...",
+    upToDate: "Ai cea mai recentă versiune!",
+    error: "Căutarea actualizărilor a eșuat",
   },
 };
 

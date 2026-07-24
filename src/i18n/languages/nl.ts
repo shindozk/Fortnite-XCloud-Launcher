@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Instellingen",
     info: "Informatie",
+    fullscreenHint: "Druk op F11 voor volledig scherm, F11 opnieuw om te sluiten",
   },
   settings: {
     title: "Instellingen",
@@ -70,6 +71,8 @@ const lang: Translations = {
     languageDesc: "Weergavetaal van de launcher kiezen",
     launcherDescription: "Een aangepaste launcher voor Fortnite op Xbox Cloud Gaming",
     githubProject: "GitHub-project",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Toon je activiteit op Discord",
   },
   info: {
     title: "Over",
@@ -88,6 +91,19 @@ const lang: Translations = {
     links: "Links",
     github: "GitHub",
     madeBy: "Gemaakt met zorg voor de Fortnite-community",
+  },
+  update: {
+    title: "Update Beschikbaar",
+    newVersionAvailable: "Er is een nieuwe versie beschikbaar!",
+    currentVersion: "Huidige versie",
+    latestVersion: "Nieuwste versie",
+    updateNotes: "Wat is er nieuw",
+    download: "Downloaden",
+    later: "Later",
+    dismiss: "Negeren",
+    checking: "Controleren op updates...",
+    upToDate: "U bent up-to-date!",
+    error: "Kan niet controleren op updates",
   },
 };
 

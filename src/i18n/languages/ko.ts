@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "설정",
     info: "정보",
+    fullscreenHint: "F11로 전체 화면, F11을 다시 눌러 종료",
   },
   settings: {
     title: "설정",
@@ -68,6 +69,8 @@ const lang: Translations = {
     languageDesc: "런처의 표시 언어를 선택합니다",
     launcherDescription: "Xbox Cloud Gaming용 Fortnite 커스텀 런처",
     githubProject: "GitHub 프로젝트",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Discord에서 활동 표시",
   },
   info: {
     title: "정보",
@@ -86,6 +89,19 @@ const lang: Translations = {
     links: "링크",
     github: "GitHub",
     madeBy: "Fortnite 커뮤니티를 위해 정성껏 제작",
+  },
+  update: {
+    title: "업데이트 가능",
+    newVersionAvailable: "새로운 버전이 있습니다!",
+    currentVersion: "현재 버전",
+    latestVersion: "최신 버전",
+    updateNotes: "새로운 기능",
+    download: "다운로드",
+    later: "나중에",
+    dismiss: "무시",
+    checking: "업데이트 확인 중...",
+    upToDate: "최신 상태입니다!",
+    error: "업데이트 확인 실패",
   },
 };
 

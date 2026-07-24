@@ -1,0 +1,58 @@
+{
+  "app": {
+    "name": "Fortnite XCloud Launcher",
+    "version": "2.1.0",
+    "author": "shindozk",
+    "identifier": "com.fortnite.xcloud.launcher",
+    "description": "Fortnite XCloud Gaming Launcher"
+  },
+  "oauth": {
+    "clientId": "1f907974-e22b-4810-a9de-d9647380c97e",
+    "scope": "xboxlive.signin openid profile offline_access",
+    "redirectUri": "https://play.xbox.com/auth/msa",
+    "authEndpoint": "https://login.live.com/oauth20_authorize.srf"
+  },
+  "game": {
+    "url": "https://play.xbox.com/stream/BT5P2X999VH2/fortnite",
+    "streamPath": "/stream/"
+  },
+  "window": {
+    "width": 1280,
+    "height": 720,
+    "minWidth": 960,
+    "minHeight": 540,
+    "title": "Fortnite XCloud Launcher",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0"
+  },
+  "github": {
+    "owner": "shindozk",
+    "repo": "Fortnite-XCloud-Launcher"
+  },
+  "discord": {
+    "appId": 1495824632169890014
+  },
+  "update": {
+    "checkOnStartup": true,
+    "startupDelay": 5000,
+    "checkIntervalMs": 1800000
+  },
+  "session": {
+    "storageKey": "xcloud-launcher-session"
+  },
+  "language": {
+    "storageKey": "xcloud-launcher-language",
+    "fallback": "en"
+  },
+  "defaultSettings": {
+    "language": "en",
+    "auto_save_session": true,
+    "auto_logout": false,
+    "stream_quality": "auto",
+    "bandwidth_adjust": true,
+    "latency_mode": true,
+    "theme": "dark",
+    "animations": true,
+    "vibrancy": false,
+    "discord_rpc": true
+  }
+}

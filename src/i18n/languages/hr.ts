@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Postavke",
     info: "Informacije",
+    fullscreenHint: "Pritisnite F11 za cijeli zaslon, F11 ponovno za izlaz",
   },
   settings: {
     title: "Postavke",
@@ -72,6 +73,8 @@ const lang: Translations = {
     languageDesc: "Odaberite jezik prikaza pokretača",
     launcherDescription: "Prilagođeni pokretač za Fortnite na Xbox Cloud Gaming",
     githubProject: "GitHub Projekt",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Prikaži svoju aktivnost na Discordu",
   },
   info: {
     title: "O programu",
@@ -90,6 +93,19 @@ const lang: Translations = {
     links: "Veze",
     github: "GitHub",
     madeBy: "Izrađeno s pažnjom za Fortnite zajednicu",
+  },
+  update: {
+    title: "Ažuranje Dostupno",
+    newVersionAvailable: "Dostupna je nova verzija!",
+    currentVersion: "Trenutna verzija",
+    latestVersion: "Najnovija verzija",
+    updateNotes: "Što je novo",
+    download: "Preuzmi",
+    later: "Kasnije",
+    dismiss: "Odbaci",
+    checking: "Provjera ažuranja...",
+    upToDate: "Imate najnoviju verziju!",
+    error: "Provjera ažuranja nije uspjela",
   },
 };
 

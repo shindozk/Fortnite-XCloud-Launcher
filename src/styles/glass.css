@@ -1,0 +1,125 @@
+/* ═══════════════════════════════════════════════════════════
+   Liquid Glass — Pure CSS Foundation
+   ═══════════════════════════════════════════════════════════ */
+
+.glass-surface {
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+    0 4px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 14px;
+}
+
+.glass-panel {
+  position: relative;
+  background: rgba(20, 20, 28, 0.75);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04),
+    0 32px 80px rgba(0, 0, 0, 0.5),
+    0 0 0 0.5px rgba(255, 255, 255, 0.05);
+  border-radius: 28px;
+  color: var(--text-primary);
+}
+
+.glass-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    transparent 40%,
+    transparent 60%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+}
+
+.glass-sidebar {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-btn {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+    0 8px 32px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.glass-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.glass-btn:hover::before { opacity: 0.6; }
+
+.glass-btn-green {
+  position: relative;
+  background: rgba(16, 124, 16, 0.45);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(16, 124, 16, 0.25);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 6px 24px rgba(16, 124, 16, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.glass-btn-green::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+}
+
+.glass-orb {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 20px 60px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(123, 47, 247, 0.1);
+  animation: orbGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes orbGlow {
+  0%   { box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 20px 60px rgba(0,0,0,0.4), 0 0 40px rgba(123,47,247,0.08); }
+  100% { box-shadow: inset 0 1px 0 rgba(255,255,255,0.12), 0 20px 60px rgba(0,0,0,0.4), 0 0 60px rgba(123,47,247,0.18); }
+}

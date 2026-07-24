@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Beállítások",
     info: "Információ",
+    fullscreenHint: "Nyomja meg az F11-et a teljes képernyőhöz, az F11-et újra a kilépéshez",
   },
   settings: {
     title: "Beállítások",
@@ -72,6 +73,8 @@ const lang: Translations = {
     languageDesc: "Válassza ki a launcher megjelenítési nyelvét",
     launcherDescription: "Egyéni launcher a Fortnite-hoz az Xbox Cloud Gamingen",
     githubProject: "GitHub Projekt",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Tevékenység megjelenítése a Discordon",
   },
   info: {
     title: "Névjegy",
@@ -90,6 +93,19 @@ const lang: Translations = {
     links: "Linkek",
     github: "GitHub",
     madeBy: "Gondosan készítve a Fortnite közösség számára",
+  },
+  update: {
+    title: "Frissítés Elérhető",
+    newVersionAvailable: "Új verzió érhető el!",
+    currentVersion: "Jelenlegi verzió",
+    latestVersion: "Legújabb verzió",
+    updateNotes: "Újdonságok",
+    download: "Letöltés",
+    later: "Később",
+    dismiss: "Elutasítás",
+    checking: "Frissítések keresése...",
+    upToDate: "Ön a legújabb verziót használja!",
+    error: "Nem sikerült keresni frissítéseket",
   },
 };
 

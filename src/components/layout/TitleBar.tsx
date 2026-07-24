@@ -1,8 +1,8 @@
 import { getCurrentWindow } from "@tauri-apps/api/window";
 import { useState, useCallback, useEffect } from "react";
-import { useLanguage } from "../contexts/LanguageContext";
-import { playClick, playHover } from "../utils/sounds";
-import "../styles/titlebar.css";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { playClick, playHover } from "../../utils/sounds";
+import "../../styles/titlebar.css";
 
 export default function TitleBar() {
   const { t } = useLanguage();

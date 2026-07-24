@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Ayarlar",
     info: "Bilgi",
+    fullscreenHint: "Tam ekran için F11'e basın, çıkmak için tekrar F11'e basın",
   },
   settings: {
     title: "Ayarlar",
@@ -70,6 +71,8 @@ const lang: Translations = {
     languageDesc: "Launcher için görüntüleme dilini seçin",
     launcherDescription: "Xbox Cloud Gaming üzerinde Fortnite için özel bir launcher",
     githubProject: "GitHub Projesi",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Discord'daki aktivitenizi gösterin",
   },
   info: {
     title: "Hakkında",
@@ -88,6 +91,19 @@ const lang: Translations = {
     links: "Bağlantılar",
     github: "GitHub",
     madeBy: "Fortnite topluluğu için özenle yapıldı",
+  },
+  update: {
+    title: "Güncelleme Mevcut",
+    newVersionAvailable: "Yeni bir sürüm mevcut!",
+    currentVersion: "Mevcut sürüm",
+    latestVersion: "En son sürüm",
+    updateNotes: "Yenilikler",
+    download: "İndir",
+    later: "Daha sonra",
+    dismiss: "Yoksay",
+    checking: "Güncellemeler kontrol ediliyor...",
+    upToDate: "En güncel sürümü kullanıyorsunuz!",
+    error: "Güncellemeler kontrol edilemedi",
   },
 };
 

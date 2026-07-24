@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Mga Setting",
     info: "Impormasyon",
+    fullscreenHint: "Pindutin ang F11 para sa fullscreen, F11 muli para lumabas",
   },
   settings: {
     title: "Mga Setting",
@@ -72,6 +73,8 @@ const lang: Translations = {
     languageDesc: "Piliin ang wika ng display para sa launcher",
     launcherDescription: "Isang custom launcher para sa Fortnite sa Xbox Cloud Gaming",
     githubProject: "GitHub Project",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Ipakita ang iyong aktibidad sa Discord",
   },
   info: {
     title: "Tungkol sa",
@@ -90,6 +93,19 @@ const lang: Translations = {
     links: "Mga Link",
     github: "GitHub",
     madeBy: "Gawa nang may malasakit para sa Fortnite community",
+  },
+  update: {
+    title: "May Bagong Update",
+    newVersionAvailable: "May bagong bersyon available!",
+    currentVersion: "Kasalukuyang bersyon",
+    latestVersion: "Pinakabagong bersyon",
+    updateNotes: "Ano bago",
+    download: "I-download",
+    later: "Mamaya",
+    dismiss: "I-dismiss",
+    checking: "Tinatignan ang updates...",
+    upToDate: "Naka-update ka na!",
+    error: "Hindi ma-check ang updates",
   },
 };
 

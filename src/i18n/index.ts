@@ -1,5 +1,6 @@
 import type { Translations, LanguageCode } from "./types";
 import { SUPPORTED_LANGUAGES } from "./types";
+import { APP_CONFIG } from "../config";
 
 import en from "./languages/en";
 import ptBR from "./languages/pt-BR";
@@ -75,11 +76,9 @@ export const translations: Record<LanguageCode, Translations> = {
   tl,
 };
 
-const LANGUAGE_STORAGE_KEY = "xcloud-launcher-language";
-
 export function getSavedLanguage(): LanguageCode | null {
   try {
-    const saved = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    const saved = localStorage.getItem(APP_CONFIG.language.storageKey);
     if (saved && saved in translations) {
       return saved as LanguageCode;
     }
@@ -89,7 +88,7 @@ export function getSavedLanguage(): LanguageCode | null {
 
 export function saveLanguage(lang: LanguageCode): void {
   try {
-    localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+    localStorage.setItem(APP_CONFIG.language.storageKey, lang);
   } catch {}
 }
 

@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "सेटिंग्स",
     info: "जानकारी",
+    fullscreenHint: "F11 दबाएं फुल स्क्रीन के लिए, F11 फिर से बाहर निकलने के लिए",
   },
   settings: {
     title: "सेटिंग्स",
@@ -70,6 +71,8 @@ const lang: Translations = {
     languageDesc: "लॉन्चर के लिए प्रदर्शन भाषा चुनें",
     launcherDescription: "Xbox Cloud Gaming पर Fortnite के लिए एक कस्टम लॉन्चर",
     githubProject: "GitHub प्रोजेक्ट",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Discord पर अपनी गतिविधि दिखाएं",
   },
   info: {
     title: "के बारे में",
@@ -88,6 +91,19 @@ const lang: Translations = {
     links: "लिंक",
     github: "GitHub",
     madeBy: "Fortnite समुदाय के लिए देखभाल से बनाया गया",
+  },
+  update: {
+    title: "अपडेट उपलब्ध",
+    newVersionAvailable: "एक नया संस्करण उपलब्ध है!",
+    currentVersion: "वर्तमान संस्करण",
+    latestVersion: "नवीनतम संस्करण",
+    updateNotes: "क्या नया है",
+    download: "डाउनलोड",
+    later: "बाद में",
+    dismiss: "खारिज करें",
+    checking: "अपडेट की जाँच हो रही है...",
+    upToDate: "आप अप टू डेट हैं!",
+    error: "अपडेट जाँचने में विफल",
   },
 };
 

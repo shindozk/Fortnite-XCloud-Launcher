@@ -15,6 +15,19 @@ export interface Translations {
     installationComplete: string;
     installSuccess: string;
   };
+  update: {
+    title: string;
+    newVersionAvailable: string;
+    currentVersion: string;
+    latestVersion: string;
+    updateNotes: string;
+    download: string;
+    later: string;
+    dismiss: string;
+    checking: string;
+    upToDate: string;
+    error: string;
+  };
   titlebar: {
     minimize: string;
     maximize: string;
@@ -32,6 +45,7 @@ export interface Translations {
     github: string;
     settings: string;
     info: string;
+    fullscreenHint: string;
   };
   settings: {
     title: string;
@@ -66,6 +80,8 @@ export interface Translations {
     languageDesc: string;
     launcherDescription: string;
     githubProject: string;
+    discordRpc: string;
+    discordRpcDesc: string;
   };
   info: {
     title: string;

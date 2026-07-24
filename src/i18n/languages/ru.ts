@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Настройки",
     info: "Информация",
+    fullscreenHint: "Нажмите F11 для полноэкранного режима, F11 снова для выхода",
   },
   settings: {
     title: "Настройки",
@@ -73,6 +74,8 @@ const lang: Translations = {
     launcherDescription:
       "Пользовательский лаунчер для Fortnite в Xbox Cloud Gaming",
     githubProject: "Проект на GitHub",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Показывать вашу активность в Discord",
   },
   info: {
     title: "О программе",
@@ -91,6 +94,19 @@ const lang: Translations = {
     links: "Ссылки",
     github: "GitHub",
     madeBy: "Создано с заботой для сообщества Fortnite",
+  },
+  update: {
+    title: "Доступно обновление",
+    newVersionAvailable: "Доступна новая версия!",
+    currentVersion: "Текущая версия",
+    latestVersion: "Последняя версия",
+    updateNotes: "Нововведения",
+    download: "Скачать",
+    later: "Позже",
+    dismiss: "Пропустить",
+    checking: "Проверка обновлений...",
+    upToDate: "У вас последняя версия!",
+    error: "Не удалось проверить обновления",
   },
 };
 

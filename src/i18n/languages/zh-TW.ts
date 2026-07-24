@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "設定",
     info: "資訊",
+    fullscreenHint: "按 F11 全螢幕，再按 F11 退出",
   },
   settings: {
     title: "設定",
@@ -68,6 +69,8 @@ const lang: Translations = {
     languageDesc: "選擇啟動器的顯示語言",
     launcherDescription: "一款用於 Xbox Cloud Gaming 上 Fortnite 的自訂啟動器",
     githubProject: "GitHub 專案",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "在Discord上顯示你的遊戲活動",
   },
   info: {
     title: "關於",
@@ -86,6 +89,19 @@ const lang: Translations = {
     links: "連結",
     github: "GitHub",
     madeBy: "為 Fortnite 社群用心打造",
+  },
+  update: {
+    title: "有可用更新",
+    newVersionAvailable: "有新版本可用！",
+    currentVersion: "目前版本",
+    latestVersion: "最新版本",
+    updateNotes: "更新內容",
+    download: "下載",
+    later: "稍後",
+    dismiss: "忽略",
+    checking: "正在檢查更新...",
+    upToDate: "已是最新版本！",
+    error: "檢查更新失敗",
   },
 };
 

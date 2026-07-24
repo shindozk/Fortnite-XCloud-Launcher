@@ -1,13 +1,17 @@
+/* ═══════════════════════════════════════════════════════════
+   Global Reset & CSS Custom Properties
+   ═══════════════════════════════════════════════════════════ */
+
 :root {
   --bg-primary: #0a0a1a;
   --bg-secondary: #111128;
   --bg-card: #1a1a2e;
-  --text-primary: #ffffff;
+  --text-primary: #f0f0f0;
   --text-secondary: #b0b0cc;
-  --text-muted: #6b6b8d;
-  --accent-green: #107c10;
+  --text-muted: #666;
+  --accent-green: #107C10;
   --accent-green-hover: #13a013;
-  --accent-purple: #7b2ff7;
+  --accent-purple: #7B3FF7;
   --accent-blue: #4a90d9;
   --accent-pink: #e91e8c;
   --accent-cyan: #00d4ff;
@@ -38,21 +42,22 @@ html, body, #root {
   user-select: none;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--text-muted);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--text-secondary);
 }
 
 button {
@@ -68,6 +73,8 @@ button:focus-visible {
   outline: 2px solid var(--accent-purple);
   outline-offset: 2px;
 }
+
+/* ═══ Animations ══════════════════════════════════════════ */
 
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }

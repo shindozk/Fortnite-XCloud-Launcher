@@ -2,7 +2,7 @@
 
 A desktop client for playing Fortnite via Xbox Cloud Gaming (XCloud), built with Tauri 2.0, React, TypeScript, and Rust.
 
-![Banner](src/assets/images/fortnite-banner.png)
+![Banner](https://i.imgur.com/Rq7KP2Z.png)
 
 ## Features
 
@@ -53,41 +53,6 @@ npm run tauri build -- --bundles nsis
 ```
 
 The output will be in `src-tauri/target/release/bundle/`.
-
-## Project Structure
-
-```
-Fortnite-XCloud-PC/
-├── src/
-│   ├── assets/images/       # App images and icons
-│   ├── components/          # React components
-│   │   ├── Launcher.tsx     # Main launcher UI
-│   │   ├── TitleBar.tsx     # Custom titlebar
-│   │   ├── SettingsModal.tsx # Settings with tabs
-│   │   ├── InfoModal.tsx    # Project info
-│   │   └── SplashScreen.tsx # Loading screen
-│   ├── contexts/
-│   │   └── LanguageContext.tsx
-│   ├── hooks/
-│   ├── i18n/                # 35 language translations
-│   │   ├── index.ts
-│   │   ├── types.ts
-│   │   └── languages/
-│   ├── styles/              # CSS styles
-│   ├── utils/
-│   │   └── sounds.ts        # Web Audio API sounds
-│   └── App.tsx
-├── src-tauri/
-│   ├── src/
-│   │   ├── lib.rs           # Tauri commands
-│   │   ├── session.rs       # Session manager
-│   │   ├── install.rs       # System installation
-│   │   └── main.rs
-│   ├── icons/               # App icons (all platforms)
-│   ├── tauri.conf.json
-│   └── Cargo.toml
-└── package.json
-```
 
 ## License
 

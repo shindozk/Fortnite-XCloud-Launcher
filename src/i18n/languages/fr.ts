@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Paramètres",
     info: "Informations",
+    fullscreenHint: "Appuyez sur F11 pour le plein écran, F11 à nouveau pour quitter",
   },
   settings: {
     title: "Paramètres",
@@ -71,6 +72,8 @@ const lang: Translations = {
     languageDesc: "Choisir la langue d'affichage du launcher",
     launcherDescription: "Un launcher personnalisé pour Fortnite sur Xbox Cloud Gaming",
     githubProject: "Projet GitHub",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Afficher votre activité sur Discord",
   },
   info: {
     title: "À propos",
@@ -89,6 +92,19 @@ const lang: Translations = {
     links: "Liens",
     github: "GitHub",
     madeBy: "Fait avec soin pour la communauté Fortnite",
+  },
+  update: {
+    title: "Mise à jour disponible",
+    newVersionAvailable: "Une nouvelle version est disponible !",
+    currentVersion: "Version actuelle",
+    latestVersion: "Dernière version",
+    updateNotes: "Nouveautés",
+    download: "Télécharger",
+    later: "Plus tard",
+    dismiss: "Ignorer",
+    checking: "Recherche de mises à jour...",
+    upToDate: "Vous êtes à jour !",
+    error: "Échec de la recherche de mises à jour",
   },
 };
 

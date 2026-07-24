@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Inställningar",
     info: "Information",
+    fullscreenHint: "Tryck F11 för helskärm, F11 igen för att avsluta",
   },
   settings: {
     title: "Inställningar",
@@ -71,6 +72,8 @@ const lang: Translations = {
     languageDesc: "Välj visningsspråk för launchern",
     launcherDescription: "En anpassad launcher för Fortnite på Xbox Cloud Gaming",
     githubProject: "GitHub-projekt",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Visa din aktivitet på Discord",
   },
   info: {
     title: "Om",
@@ -89,6 +92,19 @@ const lang: Translations = {
     links: "Länkar",
     github: "GitHub",
     madeBy: "Skapad med omsorg för Fortnite-gemenskapen",
+  },
+  update: {
+    title: "Uppdatering Tillgänglig",
+    newVersionAvailable: "En ny version är tillgänglig!",
+    currentVersion: "Nuvarande version",
+    latestVersion: "Senaste version",
+    updateNotes: "Nyheter",
+    download: "Ladda ner",
+    later: "Senare",
+    dismiss: "Avvisa",
+    checking: "Söker efter uppdateringar...",
+    upToDate: "Du har senaste versionen!",
+    error: "Kunde inte söka efter uppdateringar",
   },
 };
 

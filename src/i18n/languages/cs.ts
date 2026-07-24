@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Nastavení",
     info: "Informace",
+    fullscreenHint: "Stiskněte F11 pro celou obrazovku, F11 znovu pro ukončení",
   },
   settings: {
     title: "Nastavení",
@@ -72,6 +73,8 @@ const lang: Translations = {
     languageDesc: "Vyberte zobrazovací jazyk launcheru",
     launcherDescription: "Vlastní launcher pro Fortnite na Xbox Cloud Gaming",
     githubProject: "Projekt na GitHubu",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Zobrazit aktivitu na Discordu",
   },
   info: {
     title: "O programu",
@@ -90,6 +93,19 @@ const lang: Translations = {
     links: "Odkazy",
     github: "GitHub",
     madeBy: "Vytvořeno s péčí pro komunitu Fortnite",
+  },
+  update: {
+    title: "Dostupná aktualizace",
+    newVersionAvailable: "Je k dispozici nová verze!",
+    currentVersion: "Aktuální verze",
+    latestVersion: "Nejnovější verze",
+    updateNotes: "Co je nového",
+    download: "Stáhnout",
+    later: "Později",
+    dismiss: "Zahodit",
+    checking: "Kontrola aktualizací...",
+    upToDate: "Máte nejnovější verzi!",
+    error: "Nepodařilo se zkontrolovat aktualizace",
   },
 };
 

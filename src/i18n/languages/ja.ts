@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "設定",
     info: "情報",
+    fullscreenHint: "F11でフルスクリーン、もう一度F11で終了",
   },
   settings: {
     title: "設定",
@@ -68,6 +69,8 @@ const lang: Translations = {
     languageDesc: "ランチャーの表示言語を選択します",
     launcherDescription: "FortniteのXbox Cloud Gaming用カスタムランチャー",
     githubProject: "GitHubプロジェクト",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Discordでアクティビティを表示",
   },
   info: {
     title: "バージョン情報",
@@ -86,6 +89,19 @@ const lang: Translations = {
     links: "リンク",
     github: "GitHub",
     madeBy: "Fortniteコミュニティのために心を込めて作成",
+  },
+  update: {
+    title: "アップデートがあります",
+    newVersionAvailable: "新しいバージョンが利用可能です！",
+    currentVersion: "現在のバージョン",
+    latestVersion: "最新バージョン",
+    updateNotes: "新機能",
+    download: "ダウンロード",
+    later: "後で",
+    dismiss: "無視",
+    checking: "アップデートを確認中...",
+    upToDate: "最新の状態です！",
+    error: "アップデートの確認に失敗しました",
   },
 };
 

@@ -1,81 +1,63 @@
+/* ═══════════════════════════════════════════════════════════
+   TitleBar — Liquid Glass
+   ═══════════════════════════════════════════════════════════ */
+
 .titlebar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 40px;
-  background: transparent;
+  height: 44px;
   position: relative;
   z-index: 1000;
-  padding: 0 8px 0 0;
-  animation: slideDown 0.3s ease;
-}
-
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  padding: 0 10px 0 16px;
+  background: rgba(10, 10, 16, 0.4);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .titlebar-left {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-left: 14px;
 }
 
 .titlebar-title {
   font-size: 12px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.4px;
   user-select: none;
-  animation: fadeInText 0.5s ease 0.2s both;
-}
-
-@keyframes fadeInText {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 .titlebar-buttons {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 3px;
 }
 
 .titlebar-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 32px;
+  width: 34px;
+  height: 30px;
   border-radius: 8px;
-  color: rgba(255, 255, 255, 0.5);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(255, 255, 255, 0.45);
+  transition: all 0.2s ease;
   background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .titlebar-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.9);
-  transform: scale(1.05);
 }
 
-.titlebar-btn:active {
-  transform: scale(0.95);
-}
-
-.titlebar-btn.close {
-  margin-left: 4px;
-}
+.titlebar-btn:active { transform: scale(0.92); }
 
 .titlebar-btn.close:hover {
   background: #c42b1c;
   color: white;
-  animation: shake 0.3s ease;
-}
-
-@keyframes shake {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(-3deg); }
-  75% { transform: rotate(3deg); }
 }

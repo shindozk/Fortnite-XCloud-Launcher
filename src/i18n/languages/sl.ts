@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Nastavitve",
     info: "Informacije",
+    fullscreenHint: "Pritisnite F11 za celozaslonski način, F11 znova za izhod",
   },
   settings: {
     title: "Nastavitve",
@@ -72,6 +73,8 @@ const lang: Translations = {
     languageDesc: "Izberite jezik prikaza zagonetnika",
     launcherDescription: "Prilagojen zagonetnik za Fortnite na Xbox Cloud Gaming",
     githubProject: "GitHub Projekt",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Prikaži svojo aktivnost na Discordu",
   },
   info: {
     title: "O programu",
@@ -90,6 +93,19 @@ const lang: Translations = {
     links: "Povezave",
     github: "GitHub",
     madeBy: "Izdelano z ljubeznijo za Fortnite skupnost",
+  },
+  update: {
+    title: "Posodobitev Na Voljo",
+    newVersionAvailable: "Na voljo je nova različica!",
+    currentVersion: "Trenutna različica",
+    latestVersion: "Najnovejša različica",
+    updateNotes: "Kaj je novega",
+    download: "Prenesi",
+    later: "Pozneje",
+    dismiss: "Zavrži",
+    checking: "Preverjanje posodobitev...",
+    upToDate: "Imate najnovejšo različico!",
+    error: "Preverjanje posodobitev ni uspelo",
   },
 };
 

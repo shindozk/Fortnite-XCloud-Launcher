@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "ตั้งค่า",
     info: "ข้อมูล",
+    fullscreenHint: "กด F11 สำหรับเต็มหน้าจอ กด F11 อีกครั้งเพื่อออก",
   },
   settings: {
     title: "ตั้งค่า",
@@ -68,6 +69,8 @@ const lang: Translations = {
     languageDesc: "เลือกภาษาแสดงผลของลอนเชอร์",
     launcherDescription: "ลอนเชอร์ที่กำหนดเองสำหรับ Fortnite บน Xbox Cloud Gaming",
     githubProject: "โปรเจกต์ GitHub",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "แสดงกิจกรรมของคุณบน Discord",
   },
   info: {
     title: "เกี่ยวกับ",
@@ -86,6 +89,19 @@ const lang: Translations = {
     links: "ลิงก์",
     github: "GitHub",
     madeBy: "สร้างด้วยความใส่ใจเพื่อชุมชน Fortnite",
+  },
+  update: {
+    title: "มีอัปเดตใหม่",
+    newVersionAvailable: "มีเวอร์ชันใหม่ available!",
+    currentVersion: "เวอร์ชันปัจจุบัน",
+    latestVersion: "เวอร์ชันล่าสุด",
+    updateNotes: "สิ่งใหม่",
+    download: "ดาวน์โหลด",
+    later: "ภายหลัง",
+    dismiss: "ละเว้น",
+    checking: "กำลังตรวจสอบอัปเดต...",
+    upToDate: "คุณใช้เวอร์ชันล่าสุดแล้ว!",
+    error: "ตรวจสอบอัปเดตไม่สำเร็จ",
   },
 };
 

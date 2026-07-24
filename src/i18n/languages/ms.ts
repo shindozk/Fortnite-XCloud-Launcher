@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Tetapan",
     info: "Maklumat",
+    fullscreenHint: "Tekan F11 untuk skrin penuh, F11 sekali lagi untuk keluar",
   },
   settings: {
     title: "Tetapan",
@@ -72,6 +73,8 @@ const lang: Translations = {
     languageDesc: "Pilih bahasa paparan untuk launcher",
     launcherDescription: "Launcher tersuai untuk Fortnite di Xbox Cloud Gaming",
     githubProject: "Projek GitHub",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Tunjukkan aktiviti anda di Discord",
   },
   info: {
     title: "Tentang",
@@ -90,6 +93,19 @@ const lang: Translations = {
     links: "Pautan",
     github: "GitHub",
     madeBy: "Dibuat dengan penuh perhatian untuk komuniti Fortnite",
+  },
+  update: {
+    title: "Kemaskini Tersedia",
+    newVersionAvailable: "Versi baharu tersedia!",
+    currentVersion: "Versi semasa",
+    latestVersion: "Versi terkini",
+    updateNotes: "Apa baharu",
+    download: "Muat turun",
+    later: "Nanti",
+    dismiss: "Abaikan",
+    checking: "Memeriksa kemaskini...",
+    upToDate: "Anda sudah versi terkini!",
+    error: "Gagal memeriksa kemaskini",
   },
 };
 

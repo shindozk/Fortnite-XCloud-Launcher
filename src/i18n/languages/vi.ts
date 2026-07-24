@@ -34,6 +34,7 @@ const lang: Translations = {
     github: "GitHub",
     settings: "Cài đặt",
     info: "Thông tin",
+    fullscreenHint: "Nhấn F11 để toàn màn hình, F11 lần nữa để thoát",
   },
   settings: {
     title: "Cài đặt",
@@ -68,6 +69,8 @@ const lang: Translations = {
     languageDesc: "Chọn ngôn ngữ hiển thị cho trình khởi chạy",
     launcherDescription: "Trình khởi chạy tùy chỉnh cho Fortnite trên Xbox Cloud Gaming",
     githubProject: "Dự án GitHub",
+    discordRpc: "Discord Rich Presence",
+    discordRpcDesc: "Hiển thị hoạt động trên Discord",
   },
   info: {
     title: "Giới thiệu",
@@ -86,6 +89,19 @@ const lang: Translations = {
     links: "Liên kết",
     github: "GitHub",
     madeBy: "Được tạo với sự quan tâm dành cho cộng đồng Fortnite",
+  },
+  update: {
+    title: "Có bản cập nhật",
+    newVersionAvailable: "Có phiên bản mới!",
+    currentVersion: "Phiên bản hiện tại",
+    latestVersion: "Phiên bản mới nhất",
+    updateNotes: "Có gì mới",
+    download: "Tải xuống",
+    later: "Sau",
+    dismiss: "Bỏ qua",
+    checking: "Đang kiểm tra cập nhật...",
+    upToDate: "Bạn đang dùng phiên bản mới nhất!",
+    error: "Kiểm tra cập nhật thất bại",
   },
 };
 
