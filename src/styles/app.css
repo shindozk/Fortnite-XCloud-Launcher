@@ -1,0 +1,5 @@
+/* App-level styles */
+#root {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/tauri-apps/tauri/dev/crates/tauri-utils/schema/capability.json",
+  "identifier": "default",
+  "description": "Default capabilities for Fortnite XCloud Launcher",
+  "windows": ["main"],
+  "permissions": [
+    "core:default",
+    "core:window:default",
+    "core:window:allow-close",
+    "core:window:allow-minimize",
+    "core:window:allow-maximize",
+    "core:window:allow-unmaximize",
+    "core:window:allow-is-maximized",
+    "core:window:allow-start-dragging",
+    "core:window:allow-inner-size",
+    "core:window:allow-hide",
+    "core:window:allow-show",
+    "core:window:allow-center",
+    "core:webview:default",
+    "core:webview:allow-create-webview-window",
+    "core:webview:allow-webview-close",
+    "core:webview:allow-set-webview-focus",
+    "core:webview:allow-set-webview-position",
+    "core:webview:allow-set-webview-size",
+    "shell:default",
+    "shell:allow-open"
+  ]
+}

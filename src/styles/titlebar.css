@@ -1,0 +1,81 @@
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background: transparent;
+  position: relative;
+  z-index: 1000;
+  padding: 0 8px 0 0;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.titlebar-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 14px;
+}
+
+.titlebar-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.3px;
+  user-select: none;
+  animation: fadeInText 0.5s ease 0.2s both;
+}
+
+@keyframes fadeInText {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.titlebar-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.titlebar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 32px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  background: transparent;
+}
+
+.titlebar-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.05);
+}
+
+.titlebar-btn:active {
+  transform: scale(0.95);
+}
+
+.titlebar-btn.close {
+  margin-left: 4px;
+}
+
+.titlebar-btn.close:hover {
+  background: #c42b1c;
+  color: white;
+  animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
